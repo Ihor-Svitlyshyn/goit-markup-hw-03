@@ -166,6 +166,7 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
+  display: inline-block;
   margin-bottom: 20px;
 }
 .footer-logo-first {
@@ -192,8 +193,8 @@ body {
   color: var(--footer-accent-link-color);
 }
 
-.footer-item:not(:first-child) {
-  margin-top: 9px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* -----------------STUDIO---------------------- */
@@ -331,6 +332,7 @@ body {
 }
 
 .team-item-description {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -341,7 +343,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: currentColor;
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-item-text {
@@ -350,7 +352,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--team-item-text-color);
-  margin-top: 10px;
 }
 
 /* ---------------------PORTFOLIO------------------- */

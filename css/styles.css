@@ -47,6 +47,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .list {
@@ -61,7 +63,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--body-color);
   background-color: var(--body-background-color);
-  width: 1600px;
 }
 
 .container {
@@ -165,16 +166,13 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .footer-logo-first {
   color: var(--footer-logo-first-color);
 }
 .footer-logo-second {
   color: var(--footer-logo-second-color);
-}
-
-.footer-address {
-  margin-top: 20px;
 }
 
 .footer-link {
@@ -247,6 +245,10 @@ body {
 
 /* ----------------PECULIARITIES----------------*/
 
+.peculiarities {
+  padding-bottom: 0;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -287,11 +289,6 @@ body {
 
 /* ----------------ACTIVITY---------------- */
 
-.activity-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .activity-title {
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -299,6 +296,11 @@ body {
   letter-spacing: 0.03em;
   color: currentColor;
   margin-bottom: 50px;
+}
+
+.activity-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* --------------------TEAM------------------ */
@@ -322,10 +324,14 @@ body {
 }
 
 .team-item {
-  padding-bottom: 30px;
+  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-description {
+  padding-bottom: 30px;
 }
 
 .team-item-title {
@@ -364,12 +370,13 @@ body {
 }
 
 .portfolio-list-btn {
-  width: 611px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.item-btn:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-btn {
@@ -404,6 +411,10 @@ body {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
+}
+
+.portfolio-projects-item-link {
+  display: block;
 }
 
 .portfolio-projects-description {
